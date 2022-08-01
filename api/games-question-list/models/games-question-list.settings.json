@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games_question_lists",
+  "info": {
+    "name": "gamesQuestionList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "text": {
+      "type": "string"
+    },
+    "text_sub": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_dashboard_lists",
+  "info": {
+    "name": "MainDashboardList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text_1": {
+      "type": "string"
+    },
+    "text_2": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

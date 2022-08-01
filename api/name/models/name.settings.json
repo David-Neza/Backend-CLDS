@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "names",
+  "info": {
+    "name": "DashboardCategories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "text_1": {
+      "type": "string"
+    },
+    "text_2": {
+      "type": "string"
+    },
+    "route": {
+      "type": "string"
+    }
+  }
+}
